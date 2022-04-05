@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTShop</title>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--boxicons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--app css-->
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/grid.css">
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <!--mobile menu-->
+        <div class="mobile-menu bg-second">
+            <a href="" class="mb-logo">THSHOP</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!--end mobile menu-->
+
+        <!--main header-->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+
+            <!--top header-->
+            <div class="bg-second">
+                <div class="top-header container">
+                    <ul class="devided">
+                        <li>
+                            <a href="#"> + 84098877666</a>
+                        </li>
+                        <li>
+                            <a href="#"> TTSHOP@gmail </a>
+                        </li>
+                    </ul>
+
+                    <ul class="devided">
+                        <li class="dropdown">
+                            <a href="">USD</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">VND</a></li>
+                                <li><a href="#">jPY</a></li>
+                                <li><a href="#">DOLAR</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="">language</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">VIETNAMese</a></li>
+                                <li><a href="#">Japanese</a></li>
+                                <li><a href="#">French</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Order tracking</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--end top header-->
+
+            <!--mid header-->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="index.html" class="logo">TTSHOP</a>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                </div>
+            </div>
+            <!--end mid header-->
+
+        </div>
+        <!--end main header-->
+
+    </header>
+    <!--end header-->
+
+    <div class="cart-main">
+        <div class="container">
+
+            <div class="cart-title">
+                <div class="cart-name">
+                    Sản phẩm
+                </div>
+                <ul class="cart-content">
+                    <li><a href="#">Đơn giá</a></li>
+                    <li><a href="#">Số lượng</a></li>
+                    <li><a href="#">Số tiền </a></li>
+                    <li><a href="#">Thao tác</a></li>
+                </ul>
+            </div>
+
+            <div class="cart">
+                <div class="row cart-product motsanpham">
+                    <div class="cart-description">
+                        <div class="cart-img" style="background-image: url(images/JBL_Tune_125TWS_Lifestyle2.png);">
+                        </div>
+                        <div class="mota">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At doloremque tempore illo
+                                eaque placeat! Ea illum consequatur excepturi </p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="dongia">
+                            <del class="gia1">$200</del>
+                            <div class="gia2">$100</div>
+                        </div>
+                        <div class="soluong">
+                            <div class="product-quantity-wrapper">
+                                <span class="product-quantity-btn" id="minus">
+                                    <i class='bx bx-minus'></i>
+                                </span>
+                                <input class="product-quantity" min="1" value="1" id="text-box"></input>
+                                <span class="product-quantity-btn" id="plus">
+                                    <i class='bx bx-plus'></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="sotien">
+                            <span>$200</span>
+                        </div>
+                        <div class="thaotac">
+                            <button class="btn-update">cap nhat</button>
+                            <button class="btn-delete">xoa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+        </div>
+    </div>
+    <!--app js-->
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
