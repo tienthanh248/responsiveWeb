@@ -1,0 +1,43 @@
+lấy file về :
+git remote add origin http
+git pull origin master
+
+quay ngược time 
+git log : xem lịch sử mốc time , git checkout 4 lý tự đầu tiên của mã băm 
+git checkout 766f : quay về 766f sử dụng nó làm cái mới nhất , ctrl c để dừng log
+
+git reset --soft 766f : quay ve 766f tao ra nhanh moi 
+git reset --hard 766f : quay về 766f xóa tất cả thay đổi mới nơi cái này
+
+git init
+git add .
+git remote add origin http
+git status
+git commit -m ""
+
+
+git status
+git add .
+git commit -m ""
+git push origin master 
+
+
+git log --oneline // xem lịch sử khởi tạo
+git comit --amend -m ""  // commit vao tk cuoi 
+git branch ss1 // tao nhanh moi 
+git checkout ss1  // tro den nhanh ss1 
+git switch ss1 
+
+git branch // xem nhánh
+git branch -a //xem tất cả nhánh 
+git fetch // cập nhật git 
+
+Trước khi có thể đồng bộ hóa, bạn cần thêm một điều khiển từ xa trỏ đến kho lưu trữ ngược dòng. Bạn có thể đã làm điều này khi bạn fork ban đầu.
+
+git remote add upstream https
+git remote -v  // Xác minh điều khiển từ xa mới
+git fetch upstream //Lấy các chi nhánh của điều khiển từ xa ngược dòng
+git branch -va  // Liệt kê tất cả các chi nhánh theo dõi cục bộ và từ xa
+git checkout master  // chuyen sang nhanh cuc bo cua minh 
+git merge upstream/master  // Hợp nhất tổng thể của nhanh chinh vào nhanh cua minh 
+git pull origin main kéo code về 
